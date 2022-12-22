@@ -24,6 +24,7 @@ public class Cliente {
 
     @Column(name="fecha_de_nacimiento", nullable = false, updatable = false)
     private String fechaDeNacimiento;
+    
 
 
     public Long getId() {
@@ -62,6 +63,10 @@ public class Cliente {
         this.nombre = nombre;
         this.apellido = apellido;
         this.fechaDeNacimiento = fechaDeNacimiento;
+    }
+
+    
+    public Cliente() {
     }
 
     @Override
